@@ -9,7 +9,7 @@ font_name = font_manager.FontProperties(fname=font_path).get_name()
 plt.rc('font', family='NanumBarunGothic')
 
 df = pd.read_csv('../data/cleaned_one_reviews.csv')
-words = df.iloc[0, 1].split()
+words = df.iloc[615, 1].split()
 print(words)
 
 worddict = collections.Counter(words)
